@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './personalInfo.css';
 
-
 class PersonalInfo extends Component {
 
     constructor(props){
@@ -45,7 +44,6 @@ class PersonalInfo extends Component {
             <div className={this.props.className + " personal-info-container"}>
                 <div className={this.state.nav[0].visible + " personal-info-profile"}>
                     <h4 className="personal-info-intro">Hello, I am <span className="personal-info-fullname">Nahom Endale</span> <br/> Front End Developer</h4>
-                    
                     <p className="personal-info-description">I'm a Front End Developer nanodegree graduate from Udacity. I'm looking for opportunities to expand my desing capabilities and programming knowleadge while supporting an organization to the best of my abilities.</p>
                 </div>
 
@@ -61,6 +59,12 @@ class PersonalInfo extends Component {
                             <div className="list-container">
                                 <div className="list-item-name">address</div>
                                 <div className="list-item-value">San Francisco, CA 94109</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="list-container">
+                                <div className="list-item-name">email</div>
+                                <div className="list-item-value"> nahumtefera@gmail.com</div>
                             </div>
                         </li>
                         <li>

@@ -8,7 +8,8 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="full-name">Nahom <span className="last-name">Endale</span></h1>
+          {/* <h1 className="full-name">Nahom <span className="last-name">Endale</span></h1> */}
+          <br/> <br/> <br/>
         </header>
         <AboutMe />
         <FeaturedWork />

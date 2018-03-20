@@ -3,15 +3,21 @@
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     font-size: 2em;
     text-align: left;
+    color: #555;
+    line-height: 50px;
+
 }
 
 .personal-info-fullname {
     font-weight: 500;
+    color: #006d99;
 }
 
 .personal-info-description {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     text-align: left;
+    line-height: 35px;
+    letter-spacing: 1px;
 }
 
 .personal-info-nav {
@@ -25,7 +31,7 @@
 }
 
 .personal-info-nav-icon:hover {
-    color: red;
+    color: #006d99;
     transform: scale(1.1)
 }
 
@@ -57,4 +63,8 @@
     background: #f7faff;
     font-weight: normal;
     color: #3f3b3b
+}
+
+.face-picture {
+    max-width: 100px;
 }

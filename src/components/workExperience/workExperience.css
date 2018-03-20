@@ -34,13 +34,25 @@
     text-align: left;
 }
 
-.job-title, .job-company {
+.job-title, .job-company, .job-date {
     margin: 0;
-    font-family: "Raleway", Arial, Helvetica, sans-serif
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    color: #006d99;
+    margin: 14px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.job-date {
+    float: right;
 }
 
 .job-description {
-    font-family: "Raleway", Arial, Helvetica, sans-serif
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 33px;
+    margin-left: 15px;
+
 }
 
 .work-nav {
@@ -54,7 +66,7 @@
 }
 
 .work-nav-icon:hover {
-    color: red;
+    color: #006d99;
     transform: scale(1.1)
 }
 
