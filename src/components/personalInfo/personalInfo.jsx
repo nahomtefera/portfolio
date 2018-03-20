@@ -46,11 +46,42 @@ class PersonalInfo extends Component {
                 <div className={this.state.nav[0].visible + " personal-info-profile"}>
                     <h4 className="personal-info-intro">Hello, I am <span className="personal-info-fullname">Nahom Endale</span> <br/> Front End Developer</h4>
                     
-                    <p className="personal-info-description">I'm a Front End Developer nanodegree graduate. I'm looking for opportunities to expand my desing capabilities and programming knowleadge while supporting an organization to the best of my abilities.</p>
+                    <p className="personal-info-description">I'm a Front End Developer nanodegree graduate from Udacity. I'm looking for opportunities to expand my desing capabilities and programming knowleadge while supporting an organization to the best of my abilities.</p>
                 </div>
 
-                <div className={this.state.nav[0].visible + " personal-info-contact"}>
-                    
+                <div className={this.state.nav[1].visible + " personal-info-contact"}>
+                    <ul className="personal-info-contact-list">
+                        <li>
+                            <div className="list-container">
+                                <div className="list-item-name">name</div>
+                                <div className="list-item-value"> Nahom Endale</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="list-container">
+                                <div className="list-item-name">address</div>
+                                <div className="list-item-value">San Francisco, CA 94109</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="list-container">
+                                <div className="list-item-name">phone</div>
+                                <div className="list-item-value"> +1 (702)-945-5395</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="list-container">
+                                <div className="list-item-name">github</div>
+                                <div className="list-item-value">github.com/nahomtefera</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="list-container">
+                                <div className="list-item-name">linkedin</div>
+                                <div className="list-item-value">linkedin.com/in/nahomendale</div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
 
                 <div className="personal-info-nav">

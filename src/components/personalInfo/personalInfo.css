@@ -28,3 +28,33 @@
     color: red;
     transform: scale(1.1)
 }
+
+.personal-info-contact-list {
+    list-style: none;
+}
+
+.personal-info-contact-list li {
+    display: inline-block;
+    margin: 15px;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif
+}
+
+.list-container{
+    border: 1px solid #dcdcdc;
+}
+
+.list-item-name {
+    display: inline-block;
+    padding: 10px;
+    font-weight: 600;
+    color: #006d99;
+}
+
+.list-item-value {
+    display: inline-block;
+    padding: 10px;
+    border-left: 1px solid #d2e3ff;
+    background: #f7faff;
+    font-weight: normal;
+    color: #3f3b3b
+}
