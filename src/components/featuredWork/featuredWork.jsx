@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import bravoresume from '../../images/bravoresume.png';
-import sfcoffeefinder from '../../images/sfcoffeefinder.png';
-import textileseuropeos from '../../images/textileseuropeos.png';
-import madeinperujournal from '../../images/madeinperujournal.png';
-import firstportfolio from '../../images/firstportfolio.png';
-import asanapp from '../../images/asanapp.png';
-import todoapp from '../../images/todoapp.png';
-import designstudio from '../../images/designstudio.png';
+import bravoresume from '../../images/mockups/bravoresume.png';
+import sfcoffeefinder from '../../images/mockups/sfcoffeefinder.png';
+import textileseuropeos from '../../images/mockups/textileseuropeos.png';
+import madeinperujournal from '../../images/mockups/madeinperujournal.png';
+import firstportfolio from '../../images/mockups/firstportfolio.png';
+import asanapp from '../../images/mockups/asanapp.png';
+import todoapp from '../../images/mockups/todoapp.png';
+import designstudio from '../../images/mockups/designstudio.png';
 
 
 import './featuredWork.css';

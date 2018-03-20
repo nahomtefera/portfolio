@@ -5,3 +5,13 @@
   text-align: center;
 }
 
+.full-name {
+  font-family: "Raleway", Helvetica;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+.last-name {
+  font-family: "Raleway", Helvetica;
+  font-weight: 500;
+}

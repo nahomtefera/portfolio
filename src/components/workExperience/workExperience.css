@@ -1,0 +1,29 @@
+.work-experience-container {
+    width: 95%;
+    min-height: 600px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.arrow-icon-container {
+    height: 600px;
+    line-height: 600px;
+}
+
+.left-arrow {
+    /* float: left; */
+    flex-grow: 1;
+}
+
+.work-list{
+    flex-grow: 8;
+}
+
+.right-arrow {
+    /* float: right; */
+    flex-grow: 1;
+}
+
+.arrow-icon {
+    max-width: 50px;
+}
