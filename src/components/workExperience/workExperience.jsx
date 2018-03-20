@@ -60,7 +60,7 @@ class WorkExperience extends Component {
 
     render() {
         return (
-            <div className="work-experience-container">
+            <div className={this.props.className + " work-experience-container"}>
                 {/* <div className="left-arrow arrow-icon-container">
                     <img className="arrow-icon" src={arrowBack} alt="arrow Back"/>
                 </div> */}
@@ -71,7 +71,7 @@ class WorkExperience extends Component {
                             <div key={job.key} className={job.visible ? "job-container" : "job-container hide"}>
                                 <h4 className="job-title">{job.title}</h4>
                                 <h4 className="job-company">{job.company}</h4>
-                                <ul>
+                                <ul className="job-description">
                                     {job.description.map(item=>{
                                         return <li> {item} </li>
                                     })}
@@ -88,9 +88,7 @@ class WorkExperience extends Component {
                     </div>
                 </div>
 
-                {/* <div className="right-arrow arrow-icon-container">
-                    <img className="arrow-icon" src={arrowForward} alt="arrow Forward"/>
-                </div> */}
+
             </div>
         )
     }

@@ -1,0 +1,30 @@
+.personal-info-intro {
+    font-weight: 100;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    text-align: left;
+}
+
+.personal-info-fullname {
+    font-weight: 500;
+}
+
+.personal-info-description {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.personal-info-nav {
+    text-align: center;
+
+}
+
+.personal-info-nav-icon {
+    font-size: 2.4em;
+    cursor: pointer;
+}
+
+.personal-info-nav-icon:hover {
+    color: red;
+    transform: scale(1.1)
+}

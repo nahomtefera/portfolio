@@ -1,8 +1,5 @@
 .work-experience-container {
-    width: 80%;
-    min-height: 600px;
-    margin: 0 auto;
-    display: flex;
+
 }
 
 .arrow-icon-container {
@@ -39,6 +36,11 @@
 
 .job-title, .job-company {
     margin: 0;
+    font-family: "Raleway", Arial, Helvetica, sans-serif
+}
+
+.job-description {
+    font-family: "Raleway", Arial, Helvetica, sans-serif
 }
 
 .work-nav {
@@ -56,6 +58,3 @@
     transform: scale(1.1)
 }
 
-.hide {
-    display: none;
-}
