@@ -1,5 +1,5 @@
 .work-experience-container {
-    width: 95%;
+    width: 80%;
     min-height: 600px;
     margin: 0 auto;
     display: flex;
@@ -8,6 +8,15 @@
 .arrow-icon-container {
     height: 600px;
     line-height: 600px;
+}
+
+.arrow-icon {
+    max-width: 50px;
+    cursor: pointer;
+}
+
+.arrow-icon:hover {
+    transform: scale(1.1)
 }
 
 .left-arrow {
@@ -24,6 +33,29 @@
     flex-grow: 1;
 }
 
-.arrow-icon {
-    max-width: 50px;
+.work-list {
+    text-align: left;
+}
+
+.job-title, .job-company {
+    margin: 0;
+}
+
+.work-nav {
+    text-align: center;
+
+}
+
+.work-nav-icon {
+    font-size: 2.4em;
+    cursor: pointer;
+}
+
+.work-nav-icon:hover {
+    color: red;
+    transform: scale(1.1)
+}
+
+.hide {
+    display: none;
 }
