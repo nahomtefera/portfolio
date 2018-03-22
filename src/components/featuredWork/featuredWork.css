@@ -9,6 +9,10 @@
     transform: scale(1.1)
 }
 
+.featured-work-container {
+    overflow: hidden;
+}
+
 .featured-work {
     max-width: 90%;
     margin: 0 auto;

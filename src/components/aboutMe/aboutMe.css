@@ -15,7 +15,7 @@
 
 .about-me-active {
     font-weight: bold!important;
-    color: #3f51b5;
+    color: #006d99;
 }
 
 .about-me-list-item {
@@ -29,7 +29,7 @@
 
 .about-me-list-item:hover {
     font-weight: bold;
-    color:#3f51b5;
+    color:#006d99;
 }
 
 .hide {

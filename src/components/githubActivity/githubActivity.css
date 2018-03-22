@@ -1,0 +1,27 @@
+.chart-outer-container {
+    overflow: hidden;
+}
+
+.chart-inner-container{
+    overflow-x: scroll;
+    margin-bottom: -20px;
+}
+
+.github-chart-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3em;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    color: #afafaf;
+}
+
+.github-chart-title:hover {
+    color: #006d99;
+}
+
+.chart-img {
+    min-width: 100%;
+    min-height: 300px;
+    margin-left: -370px;
+    position: relative;
+}
