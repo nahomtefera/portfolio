@@ -17,6 +17,7 @@ class FeaturedWork extends Component {
     render() {
         return (
             <div className="featured-work-container">
+                <h3 className="featured-work-title">featured work</h3>
                 <div className="featured-work">
                     <img src={bravoresume} className="mockup-img" alt="bravoresume mockup"/>
                     <img src={sfcoffeefinder} className="mockup-img" alt="bravoresume mockup"/>

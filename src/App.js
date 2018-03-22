@@ -11,7 +11,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1 className="full-name">nahom<span className="last-name">endale</span></h1>
-          <br/> <br/> <br/>
+          <br/> 
         </header>        
         <AboutMe />
         <SkillsChart />

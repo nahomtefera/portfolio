@@ -11,9 +11,22 @@
 
 .featured-work-container {
     overflow: hidden;
+    margin-top: 80px;
 }
 
 .featured-work {
     max-width: 90%;
     margin: 0 auto;
+}
+
+.featured-work-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3em;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    color: #afafaf;
+}
+
+.featured-work-title:hover {
+    color: #006d99;
 }
