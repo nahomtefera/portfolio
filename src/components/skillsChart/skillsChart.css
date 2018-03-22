@@ -1,0 +1,57 @@
+.skill-chart-container {
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+.skill-item {
+    width: 200px;
+    height: 150px;
+    background: #fafafa;
+    border: 2px solid #dedede;
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px;
+    font-family: "Raleway", sans-serif;
+    overflow: hidden;
+}
+
+.skill-item:hover {
+    transform: scale(1.05);
+    background: rgb(98, 207, 98);
+    border-color: rgb(98, 207, 98);
+}
+
+.skill-chart-icon {
+    display: block;
+    font-size: 3.5em;
+    margin: 20px;
+    color: #dfdfdf
+}
+
+.skill-title {
+    color: #7e7e7e;
+    margin: 0;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.skill-values{
+    margin: 0;
+    color: white;
+    display: none;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.skill-item:hover .skill-title {
+    display: none;
+}
+
+.skill-item:hover .skill-values {
+    display: inline-block;
+}
+
+.skill-item:hover .skill-chart-icon {
+    color: white;
+}

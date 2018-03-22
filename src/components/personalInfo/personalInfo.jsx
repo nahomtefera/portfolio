@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './personalInfo.css';
+import FontAwesome from 'react-fontawesome';
+
 
 class PersonalInfo extends Component {
 
@@ -91,7 +93,14 @@ class PersonalInfo extends Component {
                 <div className="personal-info-nav">
                         {this.state.nav.map(info=>{
                             return(
-                                <span id={info.key} className="personal-info-nav-icon" onClick={this.toggle} key={info.key}>○</span>
+                                <FontAwesome 
+                                    id={info.key} className="personal-info-nav-icon" 
+                                    onClick={this.toggle} 
+                                    key={info.key}
+                                    name='angle-right'
+                                    size='2x'
+                                    style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+                                />
                             )
                         })}
                 </div>
