@@ -29,31 +29,31 @@ class FeaturedWork extends Component {
                 {
                     id: Math.random(),
                     title: "Bravoresume",
-                    description: "",
-                    images: [],
+                    description: "Bravoresume is a web app that I created that help users to create and download customized resumes. It was built on React and pdfMake.",
+                    images: require("../../images/videos/coffeeshop.mp4"),
                     mockup: require('../../images/mockups/bravoresume.png'),
                     modalIsOpen: false,
                 },
                 {
                     id: Math.random(),
                     title: "San Francisco Coffee Shop Finder",
-                    description: "",
+                    description: "This web app connects to Foursquare API to get a list of the Coffee Shops in San Francisco with the best ratings and displays them on a map, powered by Google Maps API.",
                     mockup: require('../../images/mockups/sfcoffeefinder.png'),
-                    images: [],
+                    images: require("../../images/videos/todoapp.mp4"),
                     modalIsOpen: false,
                 },
                 {
                     id: Math.random(),
                     title: "Textiles Europeos",
-                    description: "",
-                    mockup: require('../../images/mockups/sfcoffeefinder.png'),
+                    description: "I worked with a textile company in Spain to help them improve their UI. I wanted to give the website a cleaner appereance, update their old logos and icons and make it easier to navigate.",
+                    mockup: require('../../images/mockups/textileseuropeos.png'),
                     images: [],
                     modalIsOpen: false,
                 },
                 {
                     id: Math.random(),
                     title: "Made in Peru Journal",
-                    description: "",
+                    description: "I worked with a graphic designer to create the landing page of a journal that she created.",
                     mockup: require('../../images/mockups/madeinperujournal.png'),
                     images: [],
                     modalIsOpen: false,
@@ -69,7 +69,7 @@ class FeaturedWork extends Component {
                 {
                     id: Math.random(),
                     title: "Asana Tasks",
-                    description: "",
+                    description: "This web app connects to Asana's API. It retrieves projects and apps.",
                     mockup: require('../../images/mockups/asanapp.png'),
                     images: [],
                     modalIsOpen: false,
@@ -156,7 +156,13 @@ class FeaturedWork extends Component {
 
                                 <h2 ref={subtitle => this.subtitle = subtitle}>{project.title}</h2>
                                 <button onClick={this.closeModal}>close</button>
-                                <div>I am a modal</div>
+                                
+
+                                <video autoplay="autoplay" loop="loop" width="400" height="300">
+                                <source src={project.images} type="video/mp4" />
+                                </video>
+
+                                <div className="modal-description">{project.description}</div>
 
                             </Modal>
                         </div>
