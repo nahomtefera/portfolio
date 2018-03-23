@@ -63,28 +63,20 @@ class PersonalInfo extends Component {
                                 <div className="list-item-value">San Francisco, CA 94109</div>
                             </div>
                         </li>
-                        {/* <li>
-                            <div className="list-container">
-                                <div className="list-item-name">email</div>
-                                <div className="list-item-value"> nahumtefera@gmail.com</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="list-container">
-                                <div className="list-item-name">phone</div>
-                                <div className="list-item-value"> +1 (702)-945-5395</div>
-                            </div>
-                        </li> */}
                         <li>
                             <div className="list-container">
                                 <div className="list-item-name">github</div>
-                                <div className="list-item-value">github.com/nahomtefera</div>
+                                <div className="list-item-value">
+                                    <a href="https://github.com/nahomtefera">github.com/nahomtefera</a>
+                                </div>
                             </div>
                         </li>
                         <li>
                             <div className="list-container">
                                 <div className="list-item-name">linkedin</div>
-                                <div className="list-item-value">linkedin.com/in/nahomendale</div>
+                                <div className="list-item-value">
+                                    <a href="https://www.linkedin.com/in/nahomendale/">linkedin.com/in/nahomendale</a>
+                                </div>
                             </div>
                         </li>
                     </ul>

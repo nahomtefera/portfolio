@@ -74,6 +74,11 @@
     box-sizing: border-box;
 }
 
+.list-item-value a {
+    color: #006d99;
+    text-decoration: none;    
+}
+
 .face-picture {
     max-width: 100px;
 }
