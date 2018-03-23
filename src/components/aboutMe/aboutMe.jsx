@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PersonalInfo from '../personalInfo/personalInfo';
 import WorkExperience from '../workExperience/workExperience';
+import FontAwesome from 'react-fontawesome';
 import './aboutMe.css';
 
 
@@ -48,8 +49,24 @@ class AboutMe extends Component {
             <div className="about-me-container">
                 <div className="about-me-nav">
                     <ul className="about-me-list">
-                        <li id="personalInfo" className={this.state.personalInfo.visible === true ? "about-me-active about-me-list-item" : "about-me-list-item"} onClick={this.toggle}>About Me</li>
-                        <li id="workExperience" className={this.state.workExperience.visible === true ? "about-me-active about-me-list-item" : "about-me-list-item"} onClick={this.toggle}>Work Experience</li>
+                        <FontAwesome 
+                            id="personalInfo" 
+                            className={this.state.personalInfo.visible === true ? "about-me-active about-me-list-item" : "about-me-list-item"} 
+                            onClick={this.toggle}
+                            name='male'
+                            size='2x'
+                            style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+                        />  
+                        <FontAwesome 
+                            id="workExperience" 
+                            className={this.state.workExperience.visible === true ? "about-me-active about-me-list-item" : "about-me-list-item"}
+                            onClick={this.toggle}
+                            name='briefcase'
+                            size='2x'
+                            style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+                        />  
+                        {/* <li >About Me</li>
+                        <li id="workExperience" className={this.state.workExperience.visible === true ? "about-me-active about-me-list-item" : "about-me-list-item"} onClick={this.toggle}>Work Experience</li> */}
                     </ul>
                 </div>
                 <PersonalInfo className={this.state.personalInfo.visible === true ? "" : "hide"} />

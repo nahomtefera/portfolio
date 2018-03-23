@@ -18,23 +18,23 @@ class WorkExperience extends Component {
                     company: "Amazon via Nytec",
                     date: "April-2017 / March-2018",
                     visible: true,
-                    description: ["Implemented validation tools using HTML, CSS and Javascript to capture errors in data collection materials before sending them to support engineers.", "Collaborating with program managers to develop existing protocol for future data collection.", "Worked abroad in an international project for 3 months as a Data Collection Technician.", "Helped the data collection research team troubleshooting devices, network and hardware issues.",  "Managing data collection processes including securing testing materials, handling logistics, training and monitoring participants.", "Localization" ]
+                    description: ["Implemented validation tools using HTML, CSS and Javascript to capture errors in data collection materials before sending them to support engineers.", "Collaborating with program managers to develop existing protocol for future data collection.", "Managing data collection processes including securing testing materials, handling logistics, training and monitoring participants."]
                 },
                 {
                     key: 2,
                     title: "Maps Quality Analyst",
                     company: "Apple via Welocalize",
-                    date: "April-2017 / March-2018",
+                    date: "August-2017 / April-2017",
                     visible: false,
-                    description: ["I have to ensure the quality of the results that a major Maps provider gives to users in Spain's market. My job is to do a research on the results given to the users and ensure that the information is correct." ,"Helped the data collection research team troubleshooting devices, network and hardware issues.",  "Managing data collection processes including securing testing materials, handling logistics, training and monitoring participants."]
+                    description: ["Evaluation of data and algorithm performance for the Apple Maps Metrics team." ,"Monitoring and reporting defects encountered on daily tasks, collaborating with project/market leads and engineers to find solutions.", "Perform localization testing for Spanish market, working with different teams and project leads."]
                 },
                 {
                     key: 3,
                     title: "Technical Support",
                     company: "Playstation via SYKES",
-                    date: "April-2017 / March-2018",
+                    date: "September-2015 / August-2016",
                     visible: false,
-                    description: ["I've been working as Phone Agent, Chat Agent and Escalation Team Agent helping PlayStation consumers on different issues such as account recoveries, billing issues, hardware and networking issues, and more.","Helped the data collection research team troubleshooting devices, network and hardware issues.",  "Managing data collection processes including securing testing materials, handling logistics, training and monitoring participants."]
+                    description: ["Phone support and chat support for PlayStation users", "Helped on account recoveries, refund requests, hardware and networkig issues"]
                 }
             ]
         }
