@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import arrowBack from '../../images/icons/arrow-back.png';
 import arrowForward from '../../images/icons/arrow-forward.png';
+import FontAwesome from 'react-fontawesome';
 import './workExperience.css';
 
 
@@ -84,7 +85,15 @@ class WorkExperience extends Component {
                     <div className="work-nav">
                         {this.state.jobs.map(job=>{
                             return(
-                                <span id={job.key} className="work-nav-icon" onClick={this.showJob} key={job.key}>○</span>
+                                <FontAwesome
+                                    name='briefcase'
+                                    size='2x'
+                                    style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }} 
+                                    id={job.key} 
+                                    className={job.visible ? "active-work-nav-icon" : "work-nav-icon"} 
+                                    onClick={this.showJob} 
+                                    key={job.key}
+                                />
                             )
                         })}
                     </div>

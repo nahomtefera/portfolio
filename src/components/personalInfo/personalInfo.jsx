@@ -91,18 +91,23 @@ class PersonalInfo extends Component {
                 </div>
 
                 <div className="personal-info-nav">
-                        {this.state.nav.map(info=>{
-                            return(
                                 <FontAwesome 
-                                    id={info.key} className="personal-info-nav-icon" 
+                                    id='1' className="personal-info-nav-icon" 
                                     onClick={this.toggle} 
-                                    key={info.key}
+                                    key="1"
+                                    name='angle-left'
+                                    size='2x'
+                                    style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+                                />
+
+                                <FontAwesome 
+                                    id="2" className="personal-info-nav-icon" 
+                                    onClick={this.toggle} 
+                                    key="2"
                                     name='angle-right'
                                     size='2x'
                                     style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
                                 />
-                            )
-                        })}
                 </div>
             </div>
         )

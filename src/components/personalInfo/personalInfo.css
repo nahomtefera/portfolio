@@ -28,7 +28,8 @@
 .personal-info-nav-icon {
     font-size: 2.4em;
     cursor: pointer;
-    margin: 8px;
+    margin: 25px;
+    color: #a8a8a8;
 }
 
 .personal-info-nav-icon:hover {

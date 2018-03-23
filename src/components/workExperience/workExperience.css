@@ -57,12 +57,20 @@
 
 .work-nav {
     text-align: center;
+}
 
+.active-work-nav-icon {
+    font-size: 2em;
+    cursor: pointer;
+    color: #006d99;
+    margin: 10px 20px;
 }
 
 .work-nav-icon {
-    font-size: 2.4em;
+    font-size: 2em;
     cursor: pointer;
+    color: #afafaf;
+    margin: 20px 20px 10px 20px;
 }
 
 .work-nav-icon:hover {
