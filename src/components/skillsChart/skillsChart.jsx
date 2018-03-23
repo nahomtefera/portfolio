@@ -15,7 +15,7 @@ class SkillsChart extends Component {
                             style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
                         />
                     <div className="skill-title">Programming</div>
-                    <div className="skill-values">Javascrip, HTML/CSS</div>
+                    <div className="skill-values">Javascript, HTML/CSS</div>
                 </div>
                 <div className="skill-item">
                         <FontAwesome 

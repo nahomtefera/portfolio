@@ -13,6 +13,10 @@
     color: #006d99;
 }
 
+.personal-info-profile {
+    padding: 0 30px;
+}
+
 .personal-info-description {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     text-align: left;
@@ -39,6 +43,7 @@
 
 .personal-info-contact-list {
     list-style: none;
+    padding: 0;
 }
 
 .personal-info-contact-list li {
@@ -61,10 +66,12 @@
 .list-item-value {
     display: inline-block;
     padding: 10px;
-    border-left: 1px solid #d2e3ff;
+    border-top: 1px solid #d2e3ff;
     background: #f7faff;
     font-weight: normal;
-    color: #3f3b3b
+    color: #3f3b3b;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .face-picture {

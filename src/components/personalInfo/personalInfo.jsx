@@ -63,7 +63,7 @@ class PersonalInfo extends Component {
                                 <div className="list-item-value">San Francisco, CA 94109</div>
                             </div>
                         </li>
-                        <li>
+                        {/* <li>
                             <div className="list-container">
                                 <div className="list-item-name">email</div>
                                 <div className="list-item-value"> nahumtefera@gmail.com</div>
@@ -74,7 +74,7 @@ class PersonalInfo extends Component {
                                 <div className="list-item-name">phone</div>
                                 <div className="list-item-value"> +1 (702)-945-5395</div>
                             </div>
-                        </li>
+                        </li> */}
                         <li>
                             <div className="list-container">
                                 <div className="list-item-name">github</div>
