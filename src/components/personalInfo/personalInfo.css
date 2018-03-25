@@ -33,7 +33,7 @@
     font-size: 2.4em;
     cursor: pointer;
     margin: 25px;
-    color: #a8a8a8;
+    color: #dfdfdf;
 }
 
 .personal-info-nav-icon:hover {
@@ -79,6 +79,3 @@
     text-decoration: none;    
 }
 
-.face-picture {
-    max-width: 100px;
-}

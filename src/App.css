@@ -29,3 +29,10 @@
 .hide {
   display: none;
 }
+
+.face-picture {
+    max-width: 150px;
+    border-radius: 50%;
+    box-shadow: -3px 2px 27px -3px #ededed;
+    margin-bottom: 45px;
+}

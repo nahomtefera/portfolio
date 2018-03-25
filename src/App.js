@@ -12,7 +12,8 @@ class App extends Component {
         <header className="App-header">
           <h1 className="full-name">nahom<span className="last-name">endale</span></h1>
           <br/> 
-        </header>        
+        </header>
+        <img className="face-picture" src={require("./images/aboutme/nahom.jpg")} alt="nahom"/> 
         <AboutMe />
         <SkillsChart />
         <GithubActivity />
