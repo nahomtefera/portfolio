@@ -3,12 +3,8 @@
     padding: 35px;
     box-sizing: border-box;
     width: 450px;
-    /* cursor: pointer */
+    cursor: pointer;
 }
-
-/* .mockup-img:hover {
-    transform: scale(1.1)
-} */
 
 .featured-work-container {
     overflow: hidden;

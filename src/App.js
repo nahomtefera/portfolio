@@ -16,8 +16,10 @@ class App extends Component {
         <img className="face-picture" src={require("./images/aboutme/nahom.jpg")} alt="nahom"/> 
         <AboutMe />
         <SkillsChart />
-        <GithubActivity />
         <FeaturedWork />
+        <GithubActivity />
+        <br/>
+        <br/>
       </div>
     );
   }

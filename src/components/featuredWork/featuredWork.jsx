@@ -37,6 +37,7 @@ class FeaturedWork extends Component {
                     description: "Bravoresume is a web app that I created that help users to create and download customized resumes. It was built on React and pdfMake.",
                     images: [require("../../images/featuredWork/bravo/bravo-mobile.png")],
                     mockup: require('../../images/videos/mockupvideos/bravoresume.mp4'),
+                    thumbnail: require('../../images/mockups/bravoresume.png'),
                     modalIsOpen: false,
                 },
                 {
@@ -45,6 +46,7 @@ class FeaturedWork extends Component {
                     db_title: "sfcoffeeshopfinder",
                     description: "This web app connects to Foursquare API to get a list of the Coffee Shops in San Francisco with the best ratings and displays them on a map, powered by Google Maps API.",
                     mockup: require('../../images/videos/mockupvideos/sfcoffeefinder.mp4'),
+                    thumbnail: require('../../images/mockups/sfcoffeefinder.png'),
                     images: [require("../../images/videos/todoapp.mp4")],
                     modalIsOpen: false,
                 },
@@ -54,6 +56,7 @@ class FeaturedWork extends Component {
                     db_title: "textileseuropeos",
                     description: "I worked with a textile company in Spain to help them improve their UI. I wanted to give the website a cleaner appereance, update their old logos and icons and make it easier to navigate.",
                     mockup: require('../../images/videos/mockupvideos/textileseuropeos.mp4'),
+                    thumbnail: require('../../images/mockups/textileseuropeos.png'),
                     images: [],
                     modalIsOpen: false,
                 },
@@ -63,6 +66,7 @@ class FeaturedWork extends Component {
                     db_title: "madeinperujournal",
                     description: "I worked with a graphic designer to create the landing page of a journal that she created.",
                     mockup: require('../../images/videos/mockupvideos/madeinperujournal.mp4'),
+                    thumbnail: require('../../images/mockups/madeinperujournal.png'),
                     images: [],
                     modalIsOpen: false,
                 },
@@ -72,6 +76,7 @@ class FeaturedWork extends Component {
                     db_title: "portfoliotemplate",
                     description: "",
                     mockup: require('../../images/videos/mockupvideos/portfoliotemplate.mp4'),
+                    thumbnail: require('../../images/mockups/firstportfolio.png'),
                     images: [],
                     modalIsOpen: false,
                 },
@@ -81,6 +86,7 @@ class FeaturedWork extends Component {
                     db_title: "asanapp",
                     description: "This web app connects to Asana's API. It retrieves projects and apps.",
                     mockup: require('../../images/videos/mockupvideos/asanapp.mp4'),
+                    thumbnail: require('../../images/mockups/asanapp.png'),
                     images: [],
                     modalIsOpen: false,
                 },
@@ -90,6 +96,7 @@ class FeaturedWork extends Component {
                     db_title: "todoapp",
                     description: "",
                     mockup: require('../../images/videos/mockupvideos/todoapp.mp4'),
+                    thumbnail: require('../../images/mockups/todoapp.png'),
                     images: [],
                     modalIsOpen: false,
                 },
@@ -99,6 +106,7 @@ class FeaturedWork extends Component {
                     db_title: "designstudio",
                     description: "",
                     mockup: require('../../images/videos/mockupvideos/designstudio.mp4'),
+                    thumbnail: require('../../images/mockups/designstudio.png'),
                     images: [],
                     modalIsOpen: false,
                 },  
@@ -112,7 +120,7 @@ class FeaturedWork extends Component {
 
     componentDidMount(){
         for (var ref in this.refs) {
-            this.refs[ref].click()
+            this.refs[ref].click();
         }
     }
 
@@ -135,7 +143,6 @@ class FeaturedWork extends Component {
         let video = event.target;
         
         video.play()
-        console.log(event.target);
     }
 
     closeModal() {
@@ -157,17 +164,8 @@ class FeaturedWork extends Component {
                 <div className="featured-work">
                     {this.state.projects.map(project=>{
                         return(
-                            // <img 
-                            // id={project.id} 
-                            // src={project.mockup}
-                            // className="mockup-img" 
-                            // alt="project mockkup" 
-                            // onClick={this.openModal} 
-                            // />
-
-                            <video className="mockup-img" onClick={this.playVideo} ref={"mockup_gif_"+project.db_title}> 
+                            <video loop="loop" className="mockup-img" onClick={this.playVideo} ref={"mockup_gif_"+project.db_title}> 
                                 <source src={project.mockup} type="video/mp4"/>
-                                {/* <img src={project.mockup} /> */}
                             </video>
                         )
                     })}
