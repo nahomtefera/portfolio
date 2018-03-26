@@ -15,7 +15,6 @@
 }
 
 .skill-item:hover {
-    transform: scale(1.05);
     background: rgb(98, 207, 98);
     border-color: rgb(98, 207, 98);
 }

@@ -119,9 +119,12 @@ class FeaturedWork extends Component {
       }
 
     componentDidMount(){
-        for (var ref in this.refs) {
-            this.refs[ref].click();
-        }
+        setTimeout(function () {
+            for (var ref in this.refs) {
+                this.refs[ref].click();
+            }
+        }, 1000);
+
     }
 
     openModal(event) {
@@ -143,6 +146,7 @@ class FeaturedWork extends Component {
         let video = event.target;
         
         video.play()
+        console.log("click event was fired: ", video);
     }
 
     closeModal() {
@@ -164,7 +168,7 @@ class FeaturedWork extends Component {
                 <div className="featured-work">
                     {this.state.projects.map(project=>{
                         return(
-                            <video loop="loop" className="mockup-img" onClick={this.playVideo} ref={"mockup_gif_"+project.db_title}> 
+                            <video key={Math.random()} loop="loop" className="mockup-img" onClick={this.playVideo} ref={"mockup_gif_"+project.db_title}> 
                                 <source src={project.mockup} type="video/mp4"/>
                             </video>
                         )
@@ -173,7 +177,7 @@ class FeaturedWork extends Component {
 
                 {this.state.projects.map(project=>{
                     return(
-                        <div className="modals-container">
+                        <div  className="modals-container">
                             <Modal
                                 id={project.id}
                                 key={project.id}
