@@ -6,9 +6,9 @@
     /* cursor: pointer */
 }
 
-.mockup-img:hover {
+/* .mockup-img:hover {
     transform: scale(1.1)
-}
+} */
 
 .featured-work-container {
     overflow: hidden;
@@ -31,3 +31,59 @@
 .featured-work-title:hover {
     color: #006d99;
 }
+
+.modals-container {
+    width: 750px;
+    max-width: 80%;
+}
+
+.close-modal-icon {
+    color: #9f9f9f;
+    cursor: pointer;
+}
+
+.close-modal-icon:hover {
+    color: crimson;
+}
+
+.modal-title {
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 0;
+    color: #006d99;
+}
+
+.modal-description {
+    box-sizing: border-box;
+    padding: 10px 15px;
+}
+
+.all-images-container {
+
+}
+
+.all-images {
+    /* overflow-x: scroll; */
+    /* margin-bottom: -20px; */
+    text-align: center
+}
+
+.all-images-scroll-container {
+    /* width: 1000px; */
+    /* overflow: hidden; */
+}
+
+.project-images-container {
+    display: inline-block;
+    overflow: hidden;
+
+}
+
+.project-images-container  .project-images {
+    max-width: 85%;
+    width: 400px;
+    margin: 15px;
+    display: inline;
+    margin-right: 20px;
+}   
