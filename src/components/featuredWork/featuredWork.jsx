@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import Modal from 'react-modal';
+import { DefaultPlayer as Video } from 'react-html5video';
+import 'react-html5video/dist/styles.css';
 import FontAwesome from 'react-fontawesome';
 import './featuredWork.css';
-
-Modal.setAppElement('#root')
-
 
 const customStyles = {
     content : {
@@ -120,12 +118,12 @@ class FeaturedWork extends Component {
 
     componentDidMount(){
         for (var ref in this.refs) {
-            this.refs[ref].click();
+            this.refs[ref].el.click();        
         }
 
         setTimeout(()=>{
             for (var ref in this.refs) {
-                this.refs[ref].click();
+                this.refs[ref].el.click();
             }
         }, 3000);
 
@@ -167,19 +165,21 @@ class FeaturedWork extends Component {
                     {this.state.projects.map(project=>{
                         return(
                             <div className="featured-work-item-container">
-                                <video  
+                            <Video autoPlay 
                                 playsInline
                                 preload="true"
+                                poster={project.thumbnail}
+                                controls=""
+                                loop="loop"
                                 muted
                                 key={Math.random()} 
-                                autoPlay="" loop="" muted=""
                                 className="mockup-img" 
                                 src={project.mockup}
                                 onClick={this.playVideo} 
                                 ref={"mockup_gif_"+project.db_title}
                                 > 
                                     {/* <img src={project.thumbnail} alt={project.title}/> */}
-                                </video>
+                            </Video>
                                 <h2 className="featured-work-item-title">{project.title}</h2>
                             </div>
                         )
