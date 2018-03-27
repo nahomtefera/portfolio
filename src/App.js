@@ -19,6 +19,9 @@ class App extends Component {
         <FeaturedWork />
         <GithubActivity />
         <br/>
+        <div className="footer">
+          <p className="footer-title">www.nahomendale.com</p>
+        </div>
         <br/>
       </div>
     );

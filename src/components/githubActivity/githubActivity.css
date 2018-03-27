@@ -12,6 +12,7 @@
 
 .github-chart-title {
     font-family: 'Raleway', sans-serif;
+    font-weight: normal;
     font-size: 3em;
     text-transform: lowercase;
     letter-spacing: 2px;

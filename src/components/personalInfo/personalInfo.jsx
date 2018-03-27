@@ -67,7 +67,7 @@ class PersonalInfo extends Component {
                             <div className="list-container">
                                 <div className="list-item-name">github</div>
                                 <div className="list-item-value">
-                                    <a href="https://github.com/nahomtefera">github.com/nahomtefera</a>
+                                    <a target="_blank" href="https://github.com/nahomtefera">github.com/nahomtefera</a>
                                 </div>
                             </div>
                         </li>
@@ -75,7 +75,7 @@ class PersonalInfo extends Component {
                             <div className="list-container">
                                 <div className="list-item-name">linkedin</div>
                                 <div className="list-item-value">
-                                    <a href="https://www.linkedin.com/in/nahomendale/">linkedin.com/in/nahomendale</a>
+                                    <a target="_blank" href="https://www.linkedin.com/in/nahomendale/">/in/nahomendale</a>
                                 </div>
                             </div>
                         </li>

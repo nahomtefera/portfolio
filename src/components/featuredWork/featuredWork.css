@@ -12,12 +12,14 @@
 }
 
 .featured-work {
+    width: 1350px;
     max-width: 90%;
     margin: 0 auto;
 }
 
 .featured-work-title {
     font-family: 'Raleway', sans-serif;
+    font-weight: normal;
     font-size: 3em;
     text-transform: lowercase;
     letter-spacing: 2px;
@@ -25,6 +27,25 @@
 }
 
 .featured-work-title:hover {
+    color: #006d99;
+}
+
+.featured-work-item-container{
+    text-align: center;    
+    max-width: 100%;
+    -webkit-box-sizing: border-box;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 450px;
+}
+
+.featured-work-item-title{
+    font-family: 'Raleway', sans-serif;
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 1em;
+    letter-spacing: 2px;
+    display: inline;
     color: #006d99;
 }
 

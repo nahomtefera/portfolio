@@ -42,7 +42,7 @@ class FeaturedWork extends Component {
                 },
                 {
                     id: Math.random(),
-                    title: "San Francisco Coffee Shop Finder",
+                    title: "SF Coffee Shop Finder",
                     db_title: "sfcoffeeshopfinder",
                     description: "This web app connects to Foursquare API to get a list of the Coffee Shops in San Francisco with the best ratings and displays them on a map, powered by Google Maps API.",
                     mockup: require('../../images/videos/mockupvideos/sfcoffeefinder.mp4'),
@@ -119,11 +119,15 @@ class FeaturedWork extends Component {
       }
 
     componentDidMount(){
-        setTimeout(function () {
+        for (var ref in this.refs) {
+            this.refs[ref].click();
+        }
+
+        setTimeout(()=>{
             for (var ref in this.refs) {
                 this.refs[ref].click();
             }
-        }, 1000);
+        }, 3000);
 
     }
 
@@ -131,22 +135,16 @@ class FeaturedWork extends Component {
         let prevState = this.state.projects;
 
         for(var i = 0; i<prevState.length; i++){
-            if(event.target.id == prevState[i].id){
+            if(event.target.id === prevState[i].id){
                 prevState[i].modalIsOpen = true;
             }
         }
-
-        this.setState({
-            modalIsOpen: true,
-            projects: prevState
-        })
     }
 
     playVideo(event) {
-        let video = event.target;
+        let video = event.currentTarget;
         
         video.play()
-        console.log("click event was fired: ", video);
     }
 
     closeModal() {
@@ -168,55 +166,25 @@ class FeaturedWork extends Component {
                 <div className="featured-work">
                     {this.state.projects.map(project=>{
                         return(
-                            <video key={Math.random()} loop="loop" className="mockup-img" onClick={this.playVideo} ref={"mockup_gif_"+project.db_title}> 
-                                <source src={project.mockup} type="video/mp4"/>
-                            </video>
+                            <div className="featured-work-item-container">
+                                <video  
+                                playsInline
+                                preload="true"
+                                muted
+                                key={Math.random()} 
+                                autoPlay="" loop="" muted=""
+                                className="mockup-img" 
+                                src={project.mockup}
+                                onClick={this.playVideo} 
+                                ref={"mockup_gif_"+project.db_title}
+                                > 
+                                    {/* <img src={project.thumbnail} alt={project.title}/> */}
+                                </video>
+                                <h2 className="featured-work-item-title">{project.title}</h2>
+                            </div>
                         )
                     })}
                 </div>
-
-                {this.state.projects.map(project=>{
-                    return(
-                        <div  className="modals-container">
-                            <Modal
-                                id={project.id}
-                                key={project.id}
-                                isOpen={project.modalIsOpen}
-                                onRequestClose={this.closeModal}
-                                style={customStyles}
-                                contentLabel="Example Modal"
-                            >
-                            
-                                <FontAwesome 
-                                    className="close-modal-icon" 
-                                    onClick={this.closeModal}
-                                    name='times'
-                                    size='2x'
-                                    style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
-                                />      
-                                <h2 className="modal-title">{project.title}</h2>
-                                
-                                <div className="all-images-container">
-                                    <div className="all-images">
-                                        <div className="all-images-scroll-container">
-                                            {project.images.map(picture => {
-                                                return (
-                                                    <div className="project-images-container">
-                                                        <img className="project-images" src={picture} />
-                                                    </div>
-                                                )
-                                            })}
-                                        </div>
-                                    </div>
-                                </div>
-                                
-
-                                <div className="modal-description">{project.description}</div>
-
-                            </Modal>
-                        </div>
-                    )
-                })}
             </div>
         )
     }

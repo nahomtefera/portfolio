@@ -22,19 +22,19 @@ class WorkExperience extends Component {
                 },
                 {
                     key: 2,
-                    title: "Maps Quality Analyst",
-                    company: "Apple via Welocalize",
-                    date: "August-2017 / April-2017",
-                    visible: false,
-                    description: ["Evaluation of data and algorithm performance for the Apple Maps Metrics team." ,"Monitoring and reporting defects encountered on daily tasks, collaborating with project/market leads and engineers to find solutions.", "Perform localization testing for Spanish market, working with different teams and project leads."]
-                },
-                {
-                    key: 3,
                     title: "UI Developer",
                     company: "Textiles Europeos, Freelancer",
                     date: "Feb-2017 / August-2017",
                     visible: false,
                     description: ["Collaborated with team on implementing new features and UX in an Agile environment", "Made heavy use of Chrome Developer Tools + Firebug to ensure front-end code and assets were optimized and high-quality","Fixed and organized previous PHP spaghetti script.", "Working with browsers compatibility issues."]
+                },
+                {
+                    key: 3,
+                    title: "Maps Quality Analyst",
+                    company: "Apple via Welocalize",
+                    date: "August-2016 / April-2017",
+                    visible: false,
+                    description: ["Evaluation of data and algorithm performance for the Apple Maps Metrics team." ,"Monitoring and reporting defects encountered on daily tasks, collaborating with project/market leads and engineers to find solutions.", "Perform localization testing for Spanish market, working with different teams and project leads."]
                 },
                 {
                     key: 4,
