@@ -90,7 +90,7 @@ class FeaturedWork extends Component {
                 },
                 {
                     id: Math.random(),
-                    title: "Todo App with Firebase",
+                    title: "To Do App with Firebase",
                     db_title: "todoapp",
                     description: "",
                     mockup: require('../../images/videos/mockupvideos/todoapp.mp4'),
@@ -178,7 +178,6 @@ class FeaturedWork extends Component {
                                 onClick={this.playVideo} 
                                 ref={"mockup_gif_"+project.db_title}
                                 > 
-                                    {/* <img src={project.thumbnail} alt={project.title}/> */}
                             </Video>
                                 <h2 className="featured-work-item-title">{project.title}</h2>
                             </div>
