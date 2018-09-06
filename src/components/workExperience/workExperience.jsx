@@ -83,18 +83,19 @@ class WorkExperience extends Component {
                                 <h4 className="job-company">{job.company}</h4>
                                 <h4 className="job-date">{job.date}</h4>
                                 <ul className="job-description">
-                                    {job.description.map(item=>{
-                                        return <li className="job-bullet-points"> {item} </li>
+                                    {job.description.map((item, index)=>{
+                                        return <li key={index} className="job-bullet-points"> {item} </li>
                                     })}
                                 </ul>
                             </div>
                         )
                     })}
                     <div className="work-nav">
-                        {this.state.jobs.map(job=>{
+                        {this.state.jobs.map((job,index)=>{
                             return(
                                 <FontAwesome
                                     name='briefcase'
+                                    key={index}
                                     size='2x'
                                     style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }} 
                                     id={job.key} 

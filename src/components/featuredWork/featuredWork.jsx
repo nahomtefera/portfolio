@@ -179,23 +179,22 @@ class FeaturedWork extends Component {
             <div className="featured-work-container">
                 <h3 className="featured-work-title">featured work</h3>
                 <div className="featured-work">
-                    {this.state.projects.map(project=>{
+                    {this.state.projects.map((project, index)=>{
                         return(
-                            <div className="featured-work-item-container">
-                            <Video autoPlay 
-                                playsInline
-                                preload="true"
-                                poster={project.thumbnail}
-                                controls=""
-                                loop="loop"
-                                muted
-                                key={Math.random()} 
-                                className="mockup-img" 
-                                src={project.mockup}
-                                onClick={this.playVideo} 
-                                ref={"mockup_gif_"+project.db_title}
-                                > 
-                            </Video>
+                            <div key={index} className="featured-work-item-container">
+                                <Video autoPlay 
+                                    playsInline
+                                    preload="true"
+                                    poster={project.thumbnail}
+                                    loop="loop"
+                                    muted
+                                    key={Math.random()} 
+                                    className="mockup-img" 
+                                    src={project.mockup}
+                                    onClick={this.playVideo} 
+                                    ref={"mockup_gif_"+project.db_title}
+                                    > 
+                                </Video>
                                 <h2 className="featured-work-item-title">
                                     {project.url != ""
                                         ? <a target={project.target} href={project.url}>{project.title}</a>
