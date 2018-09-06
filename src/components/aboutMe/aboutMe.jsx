@@ -19,7 +19,8 @@ class AboutMe extends Component {
             }
         }
 
-        this.toggle = this.toggle.bind(this)
+        this.toggle = this.toggle.bind(this);
+        this.showWorkExp = this.showWorkExp.bind(this); 
     }
 
     toggle(event){
@@ -42,6 +43,16 @@ class AboutMe extends Component {
                 }
             })
         }
+    }
+    showWorkExp() {
+        this.setState({
+                personalInfo: {
+                    visible: false
+                },
+                workExperience: {
+                    visible: true
+                }
+            })
     }
 
     render() {
@@ -69,7 +80,7 @@ class AboutMe extends Component {
                         <li id="workExperience" className={this.state.workExperience.visible === true ? "about-me-active about-me-list-item" : "about-me-list-item"} onClick={this.toggle}>Work Experience</li> */}
                     </ul>
                 </div>
-                <PersonalInfo className={this.state.personalInfo.visible === true ? "" : "hide"} />
+                <PersonalInfo showWorkExp={this.showWorkExp} className={this.state.personalInfo.visible === true ? "" : "hide"} />
                 <WorkExperience className={this.state.workExperience.visible === true ? "" : "hide"} />
             </div>
         )

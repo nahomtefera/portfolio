@@ -46,7 +46,12 @@ class PersonalInfo extends Component {
             <div className={this.props.className + " personal-info-container"}>
                 <div className={this.state.nav[0].visible + " personal-info-profile"}>
                     <h4 className="personal-info-intro">Hello, I am <span className="personal-info-fullname">Nahom Endale</span> <br/> Front End Developer</h4>
-                    <p className="personal-info-description">I love creating beautiful websites and useful web apps, I'm currently looking for opportunities to expand my desing capabilities and programming knowleadge while supporting an organization to the best of my abilities.</p>
+                    <p className="personal-info-description">
+                    I love crafting clean, well-written and responsive web applications. I started building websites when I was 14, I enjoyed posting tutorials on graphic design, photoshop, video games, and anything technology related. I decided to become a Front End developer because of the huge impact that online applications have in shaping society and improving our lives, that’s why I'm currently looking for opportunities to work in a company that wants to keep shaping the world.
+                    </p>
+                </div>
+                <div className="show-work-exp">
+                    <span onClick={()=>{this.props.showWorkExp()}}>Work experience</span>
                 </div>
 
                 <div className={this.state.nav[1].visible + " personal-info-contact"}>

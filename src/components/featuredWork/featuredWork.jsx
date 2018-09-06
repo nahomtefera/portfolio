@@ -36,6 +36,8 @@ class FeaturedWork extends Component {
                     images: [require("../../images/featuredWork/bravo/bravo-mobile.png")],
                     mockup: require('../../images/videos/mockupvideos/bravoresume.mp4'),
                     thumbnail: require('../../images/mockups/bravoresume.png'),
+                    url:"http://www.bravoresume.com",
+                    target:"_blank",
                     modalIsOpen: false,
                 },
                 {
@@ -46,6 +48,8 @@ class FeaturedWork extends Component {
                     mockup: require('../../images/videos/mockupvideos/sfcoffeefinder.mp4'),
                     thumbnail: require('../../images/mockups/sfcoffeefinder.png'),
                     images: [require("../../images/videos/todoapp.mp4")],
+                    url:"/sfcoffeeshops",
+                    target:"",
                     modalIsOpen: false,
                 },
                 {
@@ -56,36 +60,8 @@ class FeaturedWork extends Component {
                     mockup: require('../../images/videos/mockupvideos/textileseuropeos.mp4'),
                     thumbnail: require('../../images/mockups/textileseuropeos.png'),
                     images: [],
-                    modalIsOpen: false,
-                },
-                {
-                    id: Math.random(),
-                    title: "Made in Peru Journal",
-                    db_title: "madeinperujournal",
-                    description: "I worked with a graphic designer to create the landing page of a journal that she created.",
-                    mockup: require('../../images/videos/mockupvideos/madeinperujournal.mp4'),
-                    thumbnail: require('../../images/mockups/madeinperujournal.png'),
-                    images: [],
-                    modalIsOpen: false,
-                },
-                {
-                    id: Math.random(),
-                    title: "My First Portfolio",
-                    db_title: "portfoliotemplate",
-                    description: "",
-                    mockup: require('../../images/videos/mockupvideos/portfoliotemplate.mp4'),
-                    thumbnail: require('../../images/mockups/firstportfolio.png'),
-                    images: [],
-                    modalIsOpen: false,
-                },
-                {
-                    id: Math.random(),
-                    title: "Asana Tasks",
-                    db_title: "asanapp",
-                    description: "This web app connects to Asana's API. It retrieves projects and apps.",
-                    mockup: require('../../images/videos/mockupvideos/asanapp.mp4'),
-                    thumbnail: require('../../images/mockups/asanapp.png'),
-                    images: [],
+                    url:"http://www.textileseuropeos.com/catalogo_dev1.php",
+                    target:"_blank",
                     modalIsOpen: false,
                 },
                 {
@@ -96,6 +72,8 @@ class FeaturedWork extends Component {
                     mockup: require('../../images/videos/mockupvideos/todoapp.mp4'),
                     thumbnail: require('../../images/mockups/todoapp.png'),
                     images: [],
+                    url:"/todoapp",
+                    target:"",
                     modalIsOpen: false,
                 },
                 {
@@ -106,8 +84,47 @@ class FeaturedWork extends Component {
                     mockup: require('../../images/videos/mockupvideos/designstudio.mp4'),
                     thumbnail: require('../../images/mockups/designstudio.png'),
                     images: [],
+                    url:"/design-studio",
+                    target:"",
+                    modalIsOpen: false,
+                },
+                {
+                    id: Math.random(),
+                    title: "Asana Tasks",
+                    db_title: "asanapp",
+                    description: "This web app connects to Asana's API. It retrieves projects and apps.",
+                    mockup: require('../../images/videos/mockupvideos/asanapp.mp4'),
+                    thumbnail: require('../../images/mockups/asanapp.png'),
+                    images: [],
+                    url:"",
+                    target:"",
                     modalIsOpen: false,
                 },  
+                {
+                    id: Math.random(),
+                    title: "Made in Peru Journal",
+                    db_title: "madeinperujournal",
+                    description: "I worked with a graphic designer to create the landing page of a journal that she created.",
+                    mockup: require('../../images/videos/mockupvideos/madeinperujournal.mp4'),
+                    thumbnail: require('../../images/mockups/madeinperujournal.png'),
+                    images: [],
+                    url:"",
+                    target:"",
+                    modalIsOpen: false,
+                },
+                {
+                    id: Math.random(),
+                    title: "My First Portfolio",
+                    db_title: "portfoliotemplate",
+                    description: "",
+                    mockup: require('../../images/videos/mockupvideos/portfoliotemplate.mp4'),
+                    thumbnail: require('../../images/mockups/firstportfolio.png'),
+                    images: [],
+                    url:"",
+                    target:"",
+                    modalIsOpen: false,
+                },
+
           ]
         };
     
@@ -179,7 +196,7 @@ class FeaturedWork extends Component {
                                 ref={"mockup_gif_"+project.db_title}
                                 > 
                             </Video>
-                                <h2 className="featured-work-item-title">{project.title}</h2>
+                                <h2 className="featured-work-item-title"><a target={project.target} href={project.url}>{project.title}</a></h2>
                             </div>
                         )
                     })}

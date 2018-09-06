@@ -26,7 +26,18 @@
 
 .personal-info-nav {
     text-align: center;
+}
 
+.show-work-exp {
+    padding-right: 60px;
+    text-align: right;
+}
+
+.show-work-exp span {
+    color: #006d99;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 1.2em;
 }
 
 .personal-info-nav-icon {

@@ -48,6 +48,10 @@
 .job-date {
 }
 
+.job-bullet-points {
+    margin-bottom: 10px;
+}
+
 .job-description {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     color: #333;

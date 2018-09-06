@@ -18,7 +18,7 @@ class WorkExperience extends Component {
                     company: "Amazon via Nytec",
                     date: "April-2017 / March-2018",
                     visible: true,
-                    description: ["Implemented validation tools using HTML, CSS and Javascript to capture errors in data collection materials before sending them to support engineers.", "Collaborating with program managers to develop existing protocol for future data collection.", "Managing data collection processes including securing testing materials, handling logistics, training and monitoring participants."]
+                    description: ["Implemented validation tools to capture errors in data collection materials with JavaScript, HTML5, and, CSS3, reducing over 60% of errors and improving communication between support engineers and data technicians.", "Collaborated with program managers to develop new protocols by creating more than 80 Confluence pages to document new data collection processes.", "Worked abroad in 2 international data collection projects, running over 350 complete sessions, and training and monitoring participants, handling logistics and securing testing."]
                 },
                 {
                     key: 2,
@@ -26,7 +26,7 @@ class WorkExperience extends Component {
                     company: "Textiles Europeos, Freelancer",
                     date: "Feb-2017 / August-2017",
                     visible: false,
-                    description: ["Collaborated with team on implementing new features and UX in an Agile environment", "Made heavy use of Chrome Developer Tools + Firebug to ensure front-end code and assets were optimized and high-quality","Fixed and organized previous PHP spaghetti script.", "Working with browsers compatibility issues."]
+                    description: ["Designed and updated e-commerce platform to deliver Web 2.0 UI, responsive across 5+ major devices and browsers with JavaScript, HTML5, and CSS3, optimizing user navigation speed by at least 60%.", "Programmed and debug previous PHP codebase and optimized SQL queries to improve performance by 20%.","Fixed and organized previous PHP spaghetti script.", "Implemented click and hover animations and dynamic functionalities with CSS3, jQuery and jQuery UI."]
                 },
                 {
                     key: 3,
@@ -34,7 +34,7 @@ class WorkExperience extends Component {
                     company: "Apple via Welocalize",
                     date: "August-2016 / April-2017",
                     visible: false,
-                    description: ["Evaluation of data and algorithm performance for the Apple Maps Metrics team." ,"Monitoring and reporting defects encountered on daily tasks, collaborating with project/market leads and engineers to find solutions.", "Perform localization testing for Spanish market, working with different teams and project leads."]
+                    description: ["Performed deep analysis on 15,000+ maps results, spotting recurring errors and devising resolution strategies. Performed localization testing for Spanish market, using Quip to translate and localize user queries, translating over 1,000 voice commands" ," Evaluated data and algorithm performance for Apple Maps Metrics team, using local knowledge of Spain to determine accuracy of results Apple Maps displayed to users."]
                 },
                 {
                     key: 4,
@@ -84,7 +84,7 @@ class WorkExperience extends Component {
                                 <h4 className="job-date">{job.date}</h4>
                                 <ul className="job-description">
                                     {job.description.map(item=>{
-                                        return <li> {item} </li>
+                                        return <li className="job-bullet-points"> {item} </li>
                                     })}
                                 </ul>
                             </div>
