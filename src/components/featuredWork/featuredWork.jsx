@@ -48,7 +48,7 @@ class FeaturedWork extends Component {
                     mockup: require('../../images/videos/mockupvideos/sfcoffeefinder.mp4'),
                     thumbnail: require('../../images/mockups/sfcoffeefinder.png'),
                     images: [require("../../images/videos/todoapp.mp4")],
-                    url:"/sfcoffeeshops",
+                    url:"",
                     target:"",
                     modalIsOpen: false,
                 },
@@ -72,7 +72,7 @@ class FeaturedWork extends Component {
                     mockup: require('../../images/videos/mockupvideos/todoapp.mp4'),
                     thumbnail: require('../../images/mockups/todoapp.png'),
                     images: [],
-                    url:"/todoapp",
+                    url:"",
                     target:"",
                     modalIsOpen: false,
                 },
@@ -84,7 +84,7 @@ class FeaturedWork extends Component {
                     mockup: require('../../images/videos/mockupvideos/designstudio.mp4'),
                     thumbnail: require('../../images/mockups/designstudio.png'),
                     images: [],
-                    url:"/design-studio",
+                    url:"",
                     target:"",
                     modalIsOpen: false,
                 },
@@ -196,7 +196,12 @@ class FeaturedWork extends Component {
                                 ref={"mockup_gif_"+project.db_title}
                                 > 
                             </Video>
-                                <h2 className="featured-work-item-title"><a target={project.target} href={project.url}>{project.title}</a></h2>
+                                <h2 className="featured-work-item-title">
+                                    {project.url != ""
+                                        ? <a target={project.target} href={project.url}>{project.title}</a>
+                                        : <span target={project.target}>{project.title}</span>
+                                    }
+                                </h2>
                             </div>
                         )
                     })}

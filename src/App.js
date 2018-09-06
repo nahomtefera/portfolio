@@ -4,6 +4,10 @@ import AboutMe from './components/aboutMe/aboutMe';
 import SkillsChart from './components/skillsChart/skillsChart';
 import GithubActivity from './components/githubActivity/githubActivity';
 import './App.css';
+// Google Analytics
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-125328674-01');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 class App extends Component {
   render() {
